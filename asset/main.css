@@ -1,0 +1,117 @@
+/* #131519 background color */
+/* #1e2530 modal color */
+/* #1e2530 button color */
+@import url('https://fonts.google.com/specimen/Overpass');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: #131519;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal {
+    background-color: #1e2530;
+    border-radius: 15px;
+    width: 375px;
+    margin: auto;
+    padding: 25px;
+}
+
+.modal-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #252d3b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    /* border: 1px solid  */
+}
+
+.modal-title {
+    margin-top: 15px;
+    color: white;
+}
+
+.modal-desc {
+    margin-top: 15px;
+    color: darkgray;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.rate-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-item {
+    width: 50px;
+    height: 50px;
+    background-color: #252d3b;
+    margin: 25px 0px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.list-item.active {
+    background-color: hsl(216, 12%, 54%);
+}
+
+.list-item.active span {
+    color: white;
+}
+
+.list-item span {
+    font-size: 1.4rem;
+    color: darkgray;
+}
+
+.list-item:hover {
+    background-color: #fc7613;
+    
+}
+
+.list-item:hover span {
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    background-color: #fc7613;
+    padding: 10px 15px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #fc7613;
+}
