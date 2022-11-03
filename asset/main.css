@@ -138,8 +138,17 @@ body {
     border-radius: 25px;
     padding: 5px 10px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     background-color: hsl(213, 19%, 18%);
     color: #fc7613;
     font-size: 1.5rem;
+}
+
+/* mobile */
+@media screen and (max-width: 375px) {
+    .modal {
+        width: 335px;
+        margin: 0px 20px;
+    }
 }

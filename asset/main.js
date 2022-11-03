@@ -13,13 +13,14 @@ const submitBtn = selectElement(".btn");
 const normalState = selectElement(".normal");
 const thankyouState = selectElement(".thank-you");
 const thankyouText = selectElement(".thank-you-text");
+let ratingRes;
 
 const listItems = listContainer.getElementsByClassName("list-item");
 
 const getRating = (item) => {
   return item.getAttribute("data-rate");
 };
-let ratingRes;
+
 for (var i = 0; i < listItems.length; i++) {
   listItems[i].addEventListener("click", function () {
     let current = document.getElementsByClassName("active");
