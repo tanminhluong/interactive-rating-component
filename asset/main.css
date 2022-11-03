@@ -21,13 +21,20 @@ body {
     height: 100vh;
 }
 
+.normal {
+    margin: auto;
+   
+}
+
 .modal {
     background-color: #1e2530;
     border-radius: 15px;
     width: 375px;
-    margin: auto;
+    
     padding: 25px;
 }
+
+
 
 .modal-icon {
     width: 50px;
@@ -114,4 +121,25 @@ body {
 .btn:hover {
     background-color: white;
     color: #fc7613;
+}
+
+/* Thank you section  */
+.thank-you {
+    margin: auto;
+    display: none;
+}
+
+.thank-you .modal {
+    text-align: center;
+}
+
+.thank-you-result {
+    width: 50%;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin: auto;
+    margin-top: 15px;
+    background-color: hsl(213, 19%, 18%);
+    color: #fc7613;
+    font-size: 1.5rem;
 }
